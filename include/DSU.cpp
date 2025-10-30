@@ -31,7 +31,16 @@ void DSU::UnionSet(int x,int y){
         return;
     }
 
-    parent[rootX]=rootY;
+    if(rank[rootX]<rank[rootY]){
+        parent[rootX]=rootY;
+    }
+    else if(rank[rootX]>rank[rootY]){
+        parent[rootY]=rootX;
+    }
+    else{
+        parent[rootY]=rootX;
+        rank[rootX]++;
+    }
 
     cnt--;
 }
