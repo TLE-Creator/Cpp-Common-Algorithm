@@ -11,6 +11,10 @@ KruskalMST::KruskalMST(int v): V(v) {}
 void KruskalMST::addEdges(int u,int v,int w){
     edges.push_back({u,v,w});
     edges.push_back({v,u,w});
+    /* 
+        All right,you can delete the second sentence,
+        It according to your graph.
+    */
 }
 
 tuple<int,bool> KruskalMST::Kruskal(){
