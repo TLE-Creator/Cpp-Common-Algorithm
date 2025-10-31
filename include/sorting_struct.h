@@ -12,4 +12,12 @@ struct sort_fstl{
     }
 };
 
+struct sort_flts{
+    int a;
+
+    bool operator>(const sort_flts& others){
+        return a>others.a;
+    }
+};
+
 #endif
