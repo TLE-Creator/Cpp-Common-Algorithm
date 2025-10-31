@@ -20,4 +20,8 @@ struct sort_flts{
     }
 };
 
+struct custom{
+    int a;
+};
+
 #endif
